@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Head from './components/Head/Head';
+import Note from './components/Note/Note';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Head search={props.search} titleSortAsc={props.titleSortAsc} titleSortDesc={props.titleSortDesc} dateSortAsc={props.dateSortAsc} dateSortDesc={props.dateSortDesc} state={props.state}/>
+        <Note state={props.state} update={props.update} add={props.add} delete={props.delete}/>
+      </div>
+
+    </BrowserRouter>
   );
 }
 

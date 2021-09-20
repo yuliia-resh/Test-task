@@ -1,0 +1,17 @@
+.item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.active {
+    border-color: blue;
+}
+
+
+.margin {
+    width: 100%;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,15 @@
+.searchInput {
+    width:80%;
+    display: flex;
+}
+
+.searchInput input {
+    width: 50%;
+    height: 2em;
+    align-self: center;
+}
+
+.searchInput img {
+    width: 50px;
+}
+
